@@ -1,0 +1,1868 @@
+html {
+    font-size: calc(100vw/1440 * 10);
+}
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: rgba(24, 21, 26, 1);
+    color: #fff;
+    height: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: Euclid;
+    src: url('fonts/EuclidA/Euclid\ Circular\ A\ Regular.ttf');
+}
+@font-face {
+    font-family: Grotesk;
+    src: url('fonts/Space-Grotesk/SpaceGrotesk-Regular.ttf');
+}
+@font-face {
+    font-family: GroteskB;
+    src: url('fonts/Space-Grotesk/SpaceGrotesk-Bold.ttf');
+}
+@font-face {
+    font-family: Neue;
+    src: url('fonts/Neue-Machina/NeueMachina-Regular.otf');
+}
+@font-face {
+    font-family: NeueB;
+    src: url('fonts/Neue-Machina/NeueMachina-Ultrabold.otf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+
+
+#mob-header {
+    display: none;
+}
+.header-row {
+    padding: 2rem 9.5rem;
+}
+.nav-logo {
+    flex: 0 1 15%;
+    margin-right: 28.5rem;
+}
+.header-nav {
+    flex: 0 1 75%;
+}
+.relative {
+    position: relative;
+}
+.inner-nav-list {
+    font-family: Grotesk;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-right: 3.8rem;
+}
+.nav-color {
+    font-weight: 400;
+    color: #9a95a6;
+}
+.nav-list {
+    padding-top: 1.2rem;
+}
+.lang {
+    margin-right: 2.1rem;
+}
+.lang-img {
+    width: 20%;
+    margin-right: 0.7rem;
+}
+.lang-text {
+    padding-top: 1.2rem;
+    font-family: Euclid;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.lang-icon {
+    width: 20%;
+    margin-left: 0.9rem;
+}
+.nav-btn {
+    width: 17.7rem;
+    height: 4.57rem;
+    background: linear-gradient(90deg, rgba(197, 149, 255, 0.15) 0%, rgba(91, 107, 234, 0.15) 100%);
+    border: 0.1rem solid rgba(186, 72, 218, 1);
+    border-radius: .4rem;
+    padding: .7rem;
+}
+.wallet-connected {
+    border: .1rem solid #fff;
+    background: transparent;
+}
+.nav-btn-p {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+
+
+
+.flex {
+    display: flex;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.white {
+    color: #fff;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.flex-justify {
+    justify-content: center;
+}
+.flex-around {
+    justify-content: space-around;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-even {
+    justify-content: space-evenly;
+}
+.flex-center {
+    align-items: center;
+}
+.flex-end {
+    align-items: flex-end;
+}
+.flex-start {
+    align-items: flex-start;
+}
+.centering {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.padding-0 {
+    padding: 0;
+}
+.margin-0 {
+    margin: 0;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+li, ul {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+.outer-padding, .hero-padding {
+    margin: 0 9.5rem;
+}
+.margin-top {
+    margin-top: 8rem;
+}
+
+
+
+.hero-bg {
+    background-image: url("img/landingPage/hero/bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hero {
+    margin-top: -5rem;
+    padding: 0 3.7rem 0 2.67rem;
+}
+.supply-and-borrow {
+    margin-bottom: 32rem;
+}
+.supply-balance {
+    padding-top: 3rem;
+    margin: 0 6.2rem 0 25.9rem;
+}
+.net {
+    width: 15.24rem;
+    height: 15.24rem;
+    border-radius: 50%;
+    background: rgba(102, 165, 255, 0.01);
+    border: 0.28rem solid #C595FF;
+    backdrop-filter: blur(4.76rem);
+}
+.borrow-balance {
+    padding-top: 3rem;
+    margin-left: 7.34rem;
+}
+.supply-link {
+    padding-top: 1rem;
+}
+.supply-h, .net-h {
+    font-family: Neue;
+    font-weight: 400;
+    font-size: 1.52rem;
+    line-height: 3.4rem;
+    margin: 1rem 0.5rem 0 2rem;
+}
+.net-h {
+    margin: 4.2rem 3.57rem 0 3.67rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.net-p {
+    font-family: GroteskB;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.supply-p, .borrow-p {
+    font-family: GroteskB;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 5.7rem;
+}
+.supply-balance, .net, .borrow-balance {
+    position: absolute;
+    top: 12rem;
+}
+.supply-balance {
+    left: 0;
+}
+.net {
+    left: 56rem;
+}
+.borrow-balance {
+    right: 20.5rem;
+}
+.borrow-limit {
+    margin: 6.2rem 0 0 8.2rem;
+}
+.borrow-limit-h {
+    width: 14rem;
+    margin: 0 .5rem 0 0;
+}
+.supply-icon-container {
+    margin-right: .3rem;
+}
+.modal-top {
+    margin-top: 11rem;
+}
+.borrow-limit-intro {
+    margin-right: 1.6rem;
+}
+.limit-p {
+    font-family: GroteskB;
+    font-weight: 700;
+    font-size: 1.52rem;
+    line-height: 2.28rem;
+    margin: 0 0.7rem 0 0;
+    padding-top: 0.7rem;
+}
+.limit-line {
+    width: 80.58rem;
+    height: 0.38rem;
+    background: #2f2b32;
+    margin: 1.5rem 1.52rem 0 0;
+}
+.colored-line {
+    width: 33.91rem;
+    height: .38rem;
+    background: linear-gradient(90deg, #9C5BEA 0%, #BA48DA 100%);
+    margin-top: 1.7rem;
+}
+.noncolored-line {
+    width: 46.67rem;
+    height: .4rem;
+    background: #2F2B32;
+    margin-top: 1.7rem;
+}
+.color-line {
+    width: 54.4rem;
+    height: .4rem;
+    background: #f32316;
+    margin-top: 1.7rem;
+}
+.red-line {
+    width: 10.5rem;
+    height: .4rem;
+    background: #f32316;
+    margin: 1.7rem 0 0 .77rem;
+}
+.normal-line {
+    width: 20.59rem;
+    height: .4rem;
+    background: #2F2B32;
+    margin-top: 1.7rem;
+}
+.normal-line1 {
+    width: 10.6rem;
+    height: .4rem;
+    background: #2F2B32;
+    margin: 1.7rem 1.56rem 0 0;
+}
+.normal-line2 {
+    width: 21.1rem;
+    height: .4rem;
+    background: #2F2B32;
+    margin: 1.7rem 1.56rem 0 0;
+}
+.between-line-text {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 0 .8rem 0 .9rem;
+    padding-top: 0.7rem;
+    text-decoration: underline;
+}
+.modal-intro {
+    margin-bottom: 1.5rem;
+}
+.supply-balance-modal {
+    position: absolute;
+    top: 20rem;
+    left: 39.5rem;
+    width: 31.24rem;
+    height: 17.9rem;
+    border-radius: .76rem;
+    background: #211e23;
+    padding: 2.3rem;
+    z-index: 100;
+}
+.modal-h {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+.modal-close {
+    width: 10%;
+}
+.modal-p {
+    font-family: Grotesk;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+}
+.final-limit-p {
+    font-weight: 400;
+    margin: 0;
+}
+.hero-btn-container {
+    margin: 6.2rem 46.28rem 6rem;
+}
+.hero-btn {
+    width: 31.43rem;
+    height: 6.1rem;
+    background: #211e23;
+    border-radius: 9.52rem;
+}
+.supply-market {
+    padding: 1.1rem 2.2rem;
+    margin: 0.76rem 0.76rem 0;
+}
+.active-market-btn-outlook {
+    width: 14.57rem;
+    height: 4.57rem;
+    background: #2f2b32;
+    border-radius: 9.52rem;
+    transition: all ease-in .4s;
+}
+.borrow-market-padding {
+    margin: .76rem 0 .76rem 3rem;
+}
+.supply-market-p {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+.borrow-market {
+    margin-left: 2rem;
+    padding: 1.9rem 0;
+}
+.borrow-market-p {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #6d6b6f;
+}
+
+
+.market-and-supply-headers {
+    margin-bottom: 3.6rem;
+}
+.market-and-supply-title {
+    border-bottom: .1rem solid rgba(202, 202, 202, 0.11);
+    margin-right: 38.2rem;
+}
+.title-h {
+    font-family: Grotesk;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+.all-market {
+    font-weight: 700;
+    color: #C595FF;
+    margin: 0 5.8rem 0 0;
+    padding-bottom: 1.6rem;
+    border-bottom: .6rem solid #C595FF;
+}
+.my-supply {
+    font-weight: 500;
+    color: #6d6b6f;
+}
+.search-container {
+    margin: 0 2.4rem 0 0;
+}
+.search {
+    width: 49.53rem;
+    height: 5.33rem;
+    border: .1rem solid rgba(202, 202, 202, 0.11);
+    border-radius: .8rem;
+    font-family: Neue;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: rgba(202, 202, 202, 0.68);
+    padding: 1.5rem 5.7rem;
+    background: rgba(24, 21, 26, 1);
+}
+.filter {
+    width: 13.3rem;
+    height: 5.2rem;
+    border: .1rem solid rgba(202, 202, 202, 0.11);
+    border-radius: .8rem;
+    padding: 1.4rem 2.4rem;
+    font-family: Neue;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #6d6b6f;
+    background: rgba(24, 21, 26, 1)
+}
+.search-icon, .filter-icon {
+    position: absolute;
+    top: .1rem;
+}
+.search-icon {
+    left: 1.4rem;
+}
+.filter-icon {
+    width: 20%;
+    right: 1rem;
+}
+.headers {
+    border-bottom: .1rem solid #232532;
+    margin-bottom: 2.28rem;
+}
+.headers-h {
+    font-family: Neue;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.assets {
+    width: 17%;
+    justify-content: flex-start;
+}
+.apr {
+    width: 13%;
+    justify-content: flex-start;
+}
+.funds {
+    width: 18%;
+    justify-content: flex-start;
+}
+.mysupply {
+    width: 14%;
+    justify-content: flex-start;
+}
+.collateral {
+    width: 14%;
+    justify-content: flex-start;
+}
+.action {
+    width: 24%;
+    justify-content: flex-start;
+}
+
+
+.btc-icon {
+    width: 15%;
+    margin-right: 1.5rem;
+}
+.btc-h-container {
+    margin-bottom: .26rem;
+}
+.btc-h {
+    font-family: Neue;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+.coin-activity {
+    padding-left: .1rem;
+    margin-right: .5rem;
+}
+.btc-p {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-top: .4rem;
+}
+.btc-p-green {
+    color: #4ecc4e;
+}
+.btc-p-red {
+    color: #f32316;
+}
+
+.coin-headers {
+    padding-bottom: 2.28rem;
+    border-bottom: .1rem solid #232532;
+    margin-bottom: 2.28rem;
+}
+.btc-apr-h-container {
+    padding-top: 1.4rem;
+    margin-right: .7rem;
+}
+.btc-apr-h {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+.btc-apr-icon {
+    width: 15%;
+}
+
+
+.btc-funds-h {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+.btc-funds-p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.btc-collateral {
+    padding-left: 2rem;
+}
+.btc-collateral-icon {
+    width: 20%;
+}
+.supply-btn {
+    width: 11rem;
+    height: 2.4rem;
+    background: #4ecc4e;
+    border-radius: 1.6rem;
+    padding: .4rem 2.5rem;
+}
+.supply-btn-disabled {
+    width: 11rem;
+    height: 2.4rem;
+    background: #302c32;
+    border-radius: 1.6rem;
+    padding: .4rem 1.5rem;
+}
+.supply-text {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+
+.btc-action-supply-btn {
+    width: 11.43rem;
+    height: 3.81rem;
+    background: linear-gradient(90deg, rgba(197, 149, 255, 0.15) 0%, rgba(91, 107, 234, 0.15) 100%);
+    border: .1rem solid rgba(186, 72, 218, 1);
+    border-radius: .38rem;
+    margin-right: 1.67rem;
+    padding: .76rem 3.23rem;
+}
+.btc-action-withdraw-btn {
+    width: 11.43rem;
+    height: 3.81rem;
+    border: .1rem solid #fff;
+    border-radius: .38rem;
+    padding: .75rem 2.05rem;
+}
+.btc-action-p {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+.disabled {
+    opacity: 0.1;
+}
+
+
+.back-to-home {
+    margin-bottom: 4rem;
+}
+.xerxes-borrow-line-text, .apy-info-text, .currency-icon, .rate-180-number {
+    margin-right: .8rem;
+}
+.wallet-intro-p {
+    font-family: Grotesk;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.wallet-intro {
+    margin-bottom: 21rem;
+}
+.connect-wallet-h {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 3.8rem;
+    line-height: 5.7rem;
+}
+.connect-wallet-text {
+    margin-top: .8rem;
+}
+.connect-wallet-p {
+    font-weight: 400;
+    color: #93959f;
+    max-width: 77rem;
+}
+.connect-wallet-link {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.wallet-margin-bottom {
+    margin-bottom: 12rem;
+}
+.wallet-bg {
+    width: 18rem;
+    height: 16.8rem;
+    border: .1rem solid #232532;
+    border-radius: .8rem;
+    padding: 4.1rem 0;
+}
+.wallet-img {
+    margin-bottom: .86rem;
+    padding: 0 6.3rem;
+}
+.wallet-p {
+    font-family: Grotesk;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.wallet-row {
+    margin-bottom: 4rem;
+}
+.settings-margin-bottom {
+    margin-bottom: 5rem;
+}
+.settings-email, .settings-number {
+    width: 70rem;
+    height: 5.6rem;
+    border: .1rem solid #232532;
+    background: transparent;
+    border-radius: .8rem;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    margin: .8rem 0 3.2rem;
+    font-family: Grotesk;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.settings-form-email, .settings-form-number label {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #7f7d82;
+}
+input::-webkit-input-placeholder {
+    color: white;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.connected-wallets {
+    display: none;
+    opacity: 0;
+    width: 65.2rem;
+    height: 34.3rem;
+    background: #211e23;
+    padding: 4rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 13rem auto;
+}
+.connected-wallets-header {
+    margin-bottom: 3.2rem;
+}
+.address-and-balance {
+    width: 57.2rem;
+    height: 8rem;
+    background: linear-gradient(90deg, #9C5BEA 0%, #BA48DA 100%);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+.address-and-balance-avatar {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 10rem;
+    background-image: url("img/landingPage/nav/wallet_avatar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1.4rem;
+}
+.balance {
+    margin: .2rem 6rem 0 0;
+}
+.address {
+    margin-right: 2.4rem;
+}
+.balance-h {
+    font-family: Neue;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #ede4ff;
+}
+.balance-p {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #ede4ff;
+}
+.copy {
+    margin-left: .8rem;
+}
+.connected-wallets-close-img {
+    width: 3.1rem;
+    height: 3.1rem;
+}
+.varieties-dropdown-icon {
+    width: 2rem;
+    height: 2rem;
+}
+.search-icon {
+    width: 5%;
+}
+.connected-wallets-h {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.wallets-varieties-container {
+    width: 57.2rem;
+    height: 5.6rem;
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+    border-radius: 1rem;
+    background: #282529;
+}
+.wallet-varieties-header {
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+.wallet-networks {
+    border-top: .1rem solid #343541;
+    padding-top: 1.6rem;
+    opacity: 0;
+    display: none;
+}
+.wallet-networks-list-item {
+    margin-bottom: 1.6rem;
+}
+.wallet-info-icon, .xerxes-collateral-dropdown, .check-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.6rem;
+}
+.xerxes-collateral-dropdown {
+    margin-right: 0;
+}
+.wallet-networks-expand {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .4rem 0 0 1.05rem;
+}
+.wallet-networks-check {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.wallet-info-h {
+    font-family: Neue;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+.wallet-networks-h {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.wallet-controls {
+    margin-top: 2.4rem;
+}
+.wallet-settings {
+    margin-right: 2.4rem;
+}
+.wallet-settings-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .8rem;
+    padding-top: .3rem;
+}
+.wallet-settings-h {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.change-and-disconnect {
+    width: 36rem;
+}
+.wallet-change {
+    width: 15.2rem;
+}
+
+.QR-intro {
+    margin-bottom: 2rem;
+}
+.wallet-QR-code {
+    display: none;
+}
+.QR-logo {
+    margin-right: 1rem;
+}
+.QR-h-box {
+    width: 15rem;
+    padding-top: 1rem;
+}
+.QR-code-content {
+    width: 51.2rem;
+    height: 59.2rem;
+    background: #fff;
+    border-radius: 2.8rem;
+    padding: 4rem 4rem 1.8rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 12.7rem auto;
+}
+.code-and-desktop {
+    width: 42.15rem;
+    height: 4.53rem;
+    border-radius: 1.25rem;
+    background: #d9d9d9;
+    margin: 0 .6rem 1.4rem .45rem;
+}
+.code {
+    width: 19rem;
+    height: 3.6rem;
+    border-radius: .78rem;
+    background: #fff;
+    padding: .16rem 6.3rem .31rem;
+    margin: .47rem 9.6rem .47rem .47rem;
+}
+.code-h, .desktop-h {
+    font-family: sora;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 3.1rem;
+    color: #966bf0;
+}
+.desktop {
+    margin: .62rem 0 .74rem;
+}
+.content-intro {
+    margin: 0 2.7rem 1.4rem 2.09rem;
+}
+.content-intro-h, .content-footer-h {
+    font-weight: 400;
+    color: #96929e;
+}
+.content-intro-h {
+    letter-spacing: .13rem;
+}
+.QR-scan-logo {
+    margin: 0 1.98rem .74rem;
+}
+.content-footer {
+    margin: 0 15.2rem;
+}
+
+
+.assets-borrow {
+    width: 23%;
+}
+
+.apy {
+    width: 17%;
+}
+.apy-container {
+    margin-right: .7rem;
+}
+.apy-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+
+.liquidity {
+    width: 15%;
+}
+
+.myborrow {
+    width: 15%;
+}
+
+.action-borrow {
+    width: 30%;
+}
+
+
+.borrow-bitcoin-padding {
+    margin: 6.8rem 0 21.4rem;
+    padding: 0 6rem;
+}
+.breadcrumbs, .repay-with-collateral, .borrow-apy-info, .select-assets, .apy-and-liquidity-cards, .collateral1-container, .collateral2-container, .add-collateral, .add-collateral-from-walllet {
+    margin-bottom: 2.4rem;
+}
+.breadcrumbs-h {
+    font-weight: 400;
+    color: #9a95a6;
+}
+.logo-container {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-right: 1.6rem;
+}
+.market-intro, .interest-and-reserve {
+    margin-bottom: 4rem;
+}
+.market-btn {
+    width: 30rem;
+    height: 5.6rem;
+    background: #211e23;
+    border-radius: 10rem;
+}
+.bitcoin-borrow-market {
+    padding: .8rem 2rem .8rem;
+    margin: .8rem 0 .8rem .8rem;
+}
+.active-borrow-market-btn {
+    width: 14.2rem;
+    height: 4rem;
+    border-radius: 10rem;
+    background: #2f2b32;
+}
+.analytics {
+    margin: 1.6rem 5rem 1.7rem 4rem;
+}
+.analytics-market-padding {
+    margin: 1.6rem 2.6rem 1.7rem 2.1rem;
+}
+.analytics-padding {
+    padding: .8rem 4.05rem .8rem;
+    margin: .8rem .8rem .8rem 0;
+}
+.interest-rate-card {
+    width: 73.6rem;
+    height: 47.4rem;
+    background: #211e23;
+    border-radius: 1.6rem;
+    padding: 4rem 4rem 2.4rem;
+}
+.reserve-status-card {
+    width: 36rem;
+    height: 47.4rem;
+    background: #211e23;
+    border-radius: 2rem;
+    padding: 3.2rem 4rem 4rem 3.2rem;
+}
+.interest-rate-h {
+    font-family: Neue;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.rate-180 {
+    margin-bottom: 5rem;
+}
+.rate-0-line {
+    margin-bottom: 1rem;
+}
+.rate-180-line {
+    width: 62.8rem;
+    height: .1rem;
+    background: #322d2d;
+    margin-top: 1.4rem;
+}
+.market-details-card {
+    width: 112rem;
+    height: 45.2rem;
+    background: #211e23;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.6rem;
+    padding: 4rem 5.8rem 4rem 4rem;
+}
+.first-section, .second-section {
+    flex: 0 1 50%;
+}
+.first-section {
+    margin-right: 4rem;
+}
+.reserve-status-img {
+    width: 21rem;
+    height: 21rem;
+    margin: 3.2rem auto 4rem;
+}
+.reserve-size-text {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 11.8rem auto;
+}
+.reserve-size-h {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+}
+.reserve-size-p-text {
+    margin: 0 1.4rem;
+}
+.reserve-size-p {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.23rem;
+    line-height: 2.1rem;
+}
+.green-ellipse {
+    width: 19.7rem;
+    height: 21rem;
+    position: absolute;
+    top: -24.98rem;
+    left: 4rem;
+}
+.purple-ellipse {
+    width: 18.7rem;
+    height: 21rem;
+    position: absolute;
+    top: -25rem;
+    right: 3.8rem;
+}
+.borrowed-box {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: .2rem;
+    background: #C595FF;
+    margin: .21rem .8rem 0 0;
+}
+.rotated-line {
+    width: 12.1rem;
+    border: .2rem dashed #433f45;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 32.9rem;
+    left: 20.5rem;
+}
+.trendline-purple {
+    width: 61.9rem;
+    height: 14.5rem;
+    position: absolute;
+    top: -2.7rem;
+    left: .6rem;
+}
+.trendline-green {
+    width: 62rem;
+    height: 18rem;
+    position: absolute;
+    top: -.2rem;
+    left: -5rem;
+}
+.total-borrowed-h {
+    font-family: Neue;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.interest-rate-supply-card {
+    width: 23.3rem;
+    height: 9.6rem;
+    border-radius: .8rem;
+    background: #433f45;
+    padding: 1.6rem 1.6rem 0;
+    position: absolute;
+    top: 17.3rem;
+    left: 15.4rem;
+}
+.section-one {
+    margin-bottom: 1.2rem;
+}
+.section-one-h {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.section-two-color {
+    color: #00CC8F;
+}
+.borrow-and-repay {
+    width: 58rem;
+    height: 78.4rem;
+    border-radius: 1.6rem;
+    background: #211e23;
+    padding: 3.2rem 3.2rem 4rem;
+}
+.deposit-and-borrow {
+    width: 58rem;
+    height: 82.6rem;
+    border-radius: 1.6rem;
+    background: #211e23;
+    padding: 3.2rem;
+}
+.supply-and-withdraw {
+    width: 58rem;
+    height: 60.2rem;
+    border-radius: 1.6rem;
+    background: #211e23;
+    padding: 3.2rem 3.2rem 4rem;
+}
+.cards-header, .market-details-h-text {
+    margin-bottom: 3.2rem;
+}
+.borrow-btc-btn {
+    width: 11rem;
+    height: 4rem;
+    border-radius: 10rem;
+    background: #2f2b32;
+    margin-right: 4rem;
+    padding: .8rem 3.2rem .9rem;
+}
+.repay-btc {
+    margin-top: .8rem;
+}
+.repay-btc-h-text {
+    margin-right: 3.5rem;
+}
+.repay-btc-h {
+    line-height: 2.3rem;
+    color: #6d6b6f;
+}
+.checked {
+    border: .3rem solid #7f7d82;
+    border-radius: .5rem;
+}
+.xerxes-limit-text {
+    margin-right: .94rem;
+}
+.xerxes-borrow-limit, .xerxes-collateral-container {
+    margin-bottom: 1.6rem;
+}
+.xerxes-limit-h {
+    color: #7f7d82;
+}
+.xerxes-info {
+    width: 1.72rem;
+}
+.xerxes-borrow-line {
+    margin-bottom: 2.3rem;
+}
+.combined-borrow-line {
+    margin-bottom: 3.1rem;
+}
+.xerxes-red-line {
+    width: 36rem;
+    height: .6rem;
+    border-radius: 10rem;
+    background: #f32316;
+    margin: .5rem .8rem 0 0;
+}
+.combined-purple-line {
+    width: 16.5rem;
+    height: .6rem;
+    border-radius: 10rem;
+    background: linear-gradient(90deg, #9C5BEA 0%, #BA48DA 100%);
+    margin: .5rem .8rem 0 0;
+}
+.xerxes-borrow-line-p {
+    font-family: Grotesk;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.xerxes-normal-line {
+    width: 11.6rem;
+    height: .6rem;
+    background: #2F2B32;
+    border-radius: 10rem;
+    margin-top: .5rem;
+}
+.combined-normal-line {
+    width: 31.1rem;
+    height: .6rem;
+    background: #2F2B32;
+    border-radius: 10rem;
+    margin-top: .5rem;
+}
+.collateral-amount-info {
+    margin-right: 1.6rem;
+}
+.collateral-dropdown-content {
+    width: 51.6rem;
+    height: 29.6rem;
+    border: .2rem solid #323338;
+    border-radius: .8rem;
+    padding: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.assets-dropdown-content {
+    height: 33.6rem;
+}
+.add-collateral-icon, .arrow-left-img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .8rem;
+}
+.add-collateral-card {
+    display: none;
+    width: 46.8rem;
+    height: 66.3rem;
+    padding: 3.2rem 3.2rem 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 11.8rem auto;
+}
+.select-assets-h, .market-header-h {
+    font-family: Grotesk;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+}
+.select-assets-close-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.collateral-value-header {
+    width: 40.4rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background: #282529;
+    padding: 2rem 0;
+    margin-bottom: 3.4rem;
+}
+.collateral-value-h-text, .total-borrowed-header {
+    margin-bottom: .4rem;
+}
+.collateral-value-h {
+    font-family: Neue;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+.collateral-value-p {
+    font-family: Grotesk;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+.assets-logo {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-right: 1.6rem;
+}
+.assets-line {
+    width: 46.8rem;
+    height: .1rem;
+    background: #2c2c2c;
+    margin: 1.8rem -3.2rem;
+}
+.assets-btn {
+    width: 10rem;
+    height: 4rem;
+    border: .1rem solid #fff;
+    border-radius: .38rem;
+    padding: .8rem 3.5rem;
+}
+.assets-btn-added {
+    width: 10rem;
+    height: 4rem;
+    border: .1rem solid #fff;
+    border-radius: .38rem;
+    background: #C595FF;
+    padding: .8rem 2.6rem;
+}
+.assets-btn-h {
+    font-size: 1.4rem;
+}
+.collateral-trash, .arrow-down {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.6rem;
+}
+.arrow-down {
+    margin-left: .4rem;
+}
+.xerxes-warning-container {
+    width: 51.6rem;
+    height: 7.2rem;
+    border-radius: .8rem;
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+    background: #ffecca;
+}
+.xerxes-warning-h {
+    font-weight: 500;
+    color: #18151a;
+    font-size: 1.2rem;
+}
+.xerxes-warning-icon {
+    width: 4.5rem;
+    height: 4rem;
+    margin: 0 1.6rem 1.6rem 0;
+}
+.xerxes-borrow-input-container {
+    margin-bottom: 27.2rem;
+}
+.xerxes-input-header, .interest-rate-h-text {
+    margin-bottom: .8rem;
+}
+.xerxes-input-container {
+    width: 51.6rem;
+    height: 5.6rem;
+    border-radius: .8rem;
+    background: #2F2B32;
+}
+.collateral-input-container {
+    width: 46.8rem;
+    height: 5.6rem;
+    border-radius: .8rem;
+    background: #18151a;
+}
+.xerxes-borrow-currency {
+    margin: 1.6rem 0 1.6rem 1.6rem;
+}
+.xerxes-amount-container {
+    width: 34.6rem;
+    height: 4rem;
+    border-radius: .8rem;
+    background: #18151a;
+    padding: .8rem 1.6rem;
+    margin: .8rem .8rem .8rem 0;
+}
+.collateral-amount-container {
+    width: 29.8rem;
+    height: 4rem;
+    border-radius: .8rem;
+    background: #2f2b32;
+    padding: .8rem 1.6rem;
+    margin: .8rem .8rem .8rem 0;
+}
+.max-amount-text {
+    margin: .2rem 1.6rem .2rem 0;
+}
+.max-amount-h {
+    color: #6d6b6f;
+}
+.max-amount-btn {
+    width: 4.1rem;
+    height: 2.4rem;
+    border-radius: .4rem;
+    background: #C595FF;
+    padding: .2rem .8rem;
+}
+.wallet-networks-h-bolder {
+    font-weight: 700;
+}
+.xerxes-borrow-limit-btn {
+    width: 51.6rem;
+    height: 5.6rem;
+    border-radius: .8rem;
+    background: #7f7d82;
+    padding: 1.6rem 0;
+    cursor: pointer;
+}
+.deposit-and-borrow-btn {
+    background: #C595FF;
+}
+.deposit-and-borrow-input {
+    margin-bottom: 5rem;
+}
+.add-collateral-h {
+    color: #C595FF;
+}
+.total-amount-repaid {
+    margin: 2.4rem 0;
+}
+.debt-repaid-card {
+    display: none;
+    width: 48rem;
+    height: 51.2rem;
+    background: #211e23;
+    border-radius: 1rem;
+    padding: 2.4rem 2.4rem 4rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 19.4rem auto;
+}
+.repaid-card-close-icon {
+    position: absolute;
+    right: 2.4rem;
+}
+.debt-repaid-icon {
+    width: 29.5rem;
+    height: 14.4rem;
+    margin: 4.5rem auto 4rem;
+}
+.debt-repaid-h-text {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto 1.6rem;
+}
+.debt-repaid-p-text {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto 4rem;
+}
+.repaid-card-btn {
+    width: 24rem;
+    height: 4rem;
+    border-radius: .38rem;
+    padding: .8rem 0;
+}
+.repaid-btn-h {
+    font-family: Neue;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+}
+.set-as-collateral {
+    margin: 2.4rem 0 26.6rem;
+}
+
+
+.apy-card, .liquidity-card {
+    width: 23.8rem;
+    height: 20rem;
+    border-radius: 1.6rem;
+    background: #211e23;
+}
+.apy-card {
+    padding: 6.2rem 6.8rem;
+    background-image: url("img/landingPage/body/apy-cardBg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.apy-card-header {
+    margin-bottom: .4rem;
+}
+.apy-card-text {
+    margin: 0 .4rem 0 .8rem;
+}
+.liquidity-card {
+    padding: 6.2rem 3rem;
+    background-image: url("img/landingPage/body/liquidity-cardBg.svg");
+    background-repeat: no-repeat;
+}
+.borrow-bitcoin-info {
+    width: 50rem;
+    height: 56rem;
+    border-radius: 1.6rem;
+    background: #211e23;
+    padding: 3.2rem 3.2rem 0;
+}
+.supply-doge-info {
+    height: 37.6rem;
+}
+.apy-info-h {
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+    html {
+        font-size: calc(100vw/1023 * 10);
+    }
+    .header-row {
+        padding: 2rem 5rem;
+    }
+    .nav-logo {
+        padding-top: 1rem;
+        flex: 1 0 15%;
+        margin-right: 4rem;
+    }
+    .header-nav {
+        flex: 1 0 70%;
+    }
+    .header-nav > div {
+        justify-content: unset;
+    }
+    .nav-list {
+        padding-top: 1.1rem;
+        margin-right: 4rem;
+    }
+    .inner-nav-list {
+        margin-right: 1.5rem;
+    }
+    .lang {
+        margin: 0;
+    }
+    .hero {
+        padding: 0;
+        margin: 0;
+    }
+    .supply-balance, .net, .borrow-balance {
+        top: 6rem;
+    }
+    .supply-balance {
+        margin-left: 5rem;
+    }
+    .supply-balance-modal {
+        top: 14rem;
+        left: 18.5rem;
+    }
+    .net {
+        left: 32rem;
+    }
+    .borrow-balance {
+        right: 10.5rem;
+    }
+    .borrow-limit {
+        margin-left: 0;
+    }
+    .borrow-limit-h {
+        margin-left: 0;
+    }
+    .limit-line {
+        width: 70.58rem;
+    }
+    .hero-btn-container {
+        margin: 6.2rem auto 6rem;
+    }
+    .market-and-supply {
+        overflow-x: scroll;
+    }
+    .market-and-supply-title {
+        margin-right: 10rem;
+    }
+    .colored-line {
+        width: 20rem;
+    }
+    .normal-line, .normal-line2 {
+        width: 15rem;
+    }
+    .color-line {
+        width: 35rem;
+    }
+    .red-line, .normal-line1 {
+        width: 8rem;
+    }
+    .noncolored-line {
+        width: 37rem;
+    }
+    .btc-icon {
+        width: 100%;
+    }
+    .market-details-card {
+        height: 75rem;
+        width: 73.6rem;
+    }
+    .market-details-info, .interest-and-reserve {
+        flex-wrap: wrap;
+    }
+    .interest-rate-card, .reserve-status-card {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto 4rem;
+    }
+    .first-section, .second-section {
+        flex: 1 0 100%;
+    }
+    .borrow-cards-container, .repay-cards-container {
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .supply-and-withdraw, .deposit-and-borrow, .borrow-and-repay {
+        margin-bottom: 8rem;
+    }
+    .borrow-bitcoin-info {
+        width: 58rem;
+    }
+    
+}
+
+
+
+
+@media (max-width: 650px) {
+    html {
+        font-size: calc(100vw/650 * 10);
+    }
+    #header {
+        display: none;
+    }
+    #mob-header {
+        display: flex;
+        padding: 2rem 0rem;
+    }
+    .nav-logo {
+        flex: 1 0 20%;
+        margin: 0;
+        padding: 1rem 0 0 2rem;
+    }
+    .nav-logo-img {
+        width: 30%;
+    }
+    .closeIcon {
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        right: 1.5rem;
+    }
+    .navIcon {
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        right: 1.5rem;
+    }
+    .hamburger {
+        flex: 1 0 20%;
+        padding: 2rem 2rem 0 0;
+        display: flex;
+        max-width: 8.5rem;
+        max-height: 8.5rem;
+        border: 0;
+        background: 0;
+    }
+    .mob-nav {
+        position: absolute;
+        padding-top: 3rem;
+        background: rgba(24, 21, 26, .8);
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .8s ease-in-out;
+    }
+    .walletMenu {
+        left: 0;
+        top: 10rem;
+        opacity: 1;
+        z-index: 100;
+        transform: translateY(0);
+    }
+    .outer-padding, .hero-padding {
+        margin: 0 5rem;
+    }
+    .borrow-limit {
+        overflow-x: scroll;
+    }
+    .supply-and-borrow {
+        margin-bottom: 16rem;
+    }
+    .supply-balance {
+        margin: 0;
+        top: -1rem;
+        left: -4rem;
+    }
+    .net {
+        top: 2rem;
+        left: 20rem;
+    }
+    .supply-h {
+        margin-left: 0;
+    }
+    .borrow-balance {
+        margin: 0;
+        top: -1rem;
+        right: -4rem;
+    }
+    .title-h {
+        width: 9rem;
+    }
+    .supply-balance-modal {
+        top: 7rem;
+        left: 5.5rem;
+    }
+    .btc-icon {
+        width: 100%;
+    }
+    .headers {
+        width: 200%;
+    }
+    .assets {
+        width: 31%;
+    }
+    .apr {
+        width: 31%;
+    }
+    .funds {
+        width: 36%;
+    }
+    .mysupply, .collateral {
+        width: 31%;
+    }
+    .action {
+        width: 40%;
+    }
+    .borrow-bitcoin-padding {
+        padding: 0;
+    }
+    .repay-cards-container, .borrow-bitcoin {
+        position: relative;
+        overflow-x: scroll;
+    }
+}
+
+
+
+
+@media (max-width: 485px) {
+    html {
+        font-size: calc(100vw/485 * 10);
+    }
+    .outer-padding, .hero-padding {
+        margin: 0 3rem;
+    }
+    .supply-balance {
+        margin: 0;
+        top: -1rem;
+        left: 0;
+    }
+    .supply-link {
+        padding-top: .4rem;
+    }
+    .net {
+        width: 11rem;
+        height: 11rem;
+        top: 2rem;
+        left: 16rem;
+    }
+    .supply-h {
+        margin-left: 0;
+    }
+    .net-h {
+        margin: 1.5rem auto 1rem;
+    }
+    .borrow-balance {
+        margin: 0;
+        top: -1rem;
+        right: -1rem;
+    }
+    .borrow-limit-h {
+        padding-top: .1rem;
+    }
+    .btc-apr-img {
+        width: 70%;
+    }
+    .btc-collateral {
+        padding-left: 1rem;
+    }
+    .supply-p, .borrow-p {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+    .supply-balance-modal {
+        top: 7rem;
+        left: 5.5rem;
+    }
+    .limit-p {
+        margin-left: .2rem;
+    }
+    .borrow-limit-intro {
+        margin-right: 0;
+    }
+    .borrow-bitcoin {
+        position: relative;
+        overflow-x: scroll;
+    }
+    .market-intro {
+        flex-wrap: wrap;
+    }
+    .logo-and-header {
+        margin-bottom: 3rem;
+    }
+    .market-btn {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+}
