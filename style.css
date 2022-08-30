@@ -1680,7 +1680,7 @@ input[type=number] {
         display: none;
     }
     #mob-header {
-        display: flex;
+        display: block;
         padding: 2rem 0rem;
     }
     .nav-logo {
@@ -1690,6 +1690,9 @@ input[type=number] {
     }
     .nav-logo-img {
         width: 30%;
+    }
+    .nav-list {
+        margin-right: 0;
     }
     .closeIcon {
         display: none;
@@ -1714,11 +1717,10 @@ input[type=number] {
     }
     .mob-nav {
         position: absolute;
-        padding-top: 3rem;
-        background: rgba(24, 21, 26, .8);
+        background: rgba(24, 21, 26, .9);
         opacity: 0;
         transform: translateY(-100%);
-        transition: all .8s ease-in-out;
+        transition: transform .8s ease;
     }
     .walletMenu {
         left: 0;
@@ -1726,6 +1728,21 @@ input[type=number] {
         opacity: 1;
         z-index: 100;
         transform: translateY(0);
+    }
+    .inner-nav-list {
+        margin: 2rem 0;
+    }
+    .lang {
+        margin-bottom: 3rem;
+    }
+    .lang-text {
+        padding: 0;
+    }
+    .lang-img, .lang-text {
+        margin-top: .7rem;
+    }
+    .hero {
+        margin-top: 3rem;
     }
     .outer-padding, .hero-padding {
         margin: 0 5rem;
