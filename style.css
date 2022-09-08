@@ -1571,6 +1571,9 @@ input[type=number] {
     .header-nav > div {
         justify-content: unset;
     }
+    .outer-padding, .hero-padding {
+        margin: 0 7rem;
+    }
     .nav-list {
         padding-top: 1.1rem;
         margin-right: 4rem;
@@ -1635,7 +1638,7 @@ input[type=number] {
         width: 37rem;
     }
     .btc-icon {
-        width: 100%;
+        width: 20%;
     }
     .market-details-card {
         height: 75rem;
@@ -1665,6 +1668,12 @@ input[type=number] {
     }
     .borrow-bitcoin-info {
         width: 58rem;
+    }
+    .wallet-img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 0 2rem 4rem;
+        padding: 0;
     }
     
 }
@@ -1777,26 +1786,11 @@ input[type=number] {
         top: 7rem;
         left: 5.5rem;
     }
-    .btc-icon {
-        width: 100%;
+    .headers, .coin-headers {
+        width: 100rem;
     }
-    .headers {
-        width: 200%;
-    }
-    .assets {
-        width: 31%;
-    }
-    .apr {
-        width: 31%;
-    }
-    .funds {
-        width: 36%;
-    }
-    .mysupply, .collateral {
-        width: 31%;
-    }
-    .action {
-        width: 40%;
+    .shiba-content-container img {
+        width: 30%;
     }
     .borrow-bitcoin-padding {
         padding: 0;
@@ -1804,6 +1798,26 @@ input[type=number] {
     .repay-cards-container, .borrow-bitcoin {
         position: relative;
         overflow-x: scroll;
+    }
+    .wallet-row {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .wallet-bg {
+        height: 25rem;
+    }
+    .wallet-img {
+        margin: 0 0 2rem 6.5rem;
+        padding: 0;
+    }
+    .wallet-margin-bottom {
+        margin-bottom: 4rem;
+    }
+    .wallet-intro {
+        margin-bottom: 8rem;
     }
 }
 

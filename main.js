@@ -21,7 +21,7 @@ function toggleMenu() {
         close.style.display = "block";
         nav.style.display = "none";
         menu.style.width = "100%";
-        menu.style.height = "50%";
+        menu.style.height = "75%";
     }
 }
 
